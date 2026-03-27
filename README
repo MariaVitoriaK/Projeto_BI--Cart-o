@@ -1,0 +1,176 @@
+# 📊 Projeto BI — Data Warehouse de Transações de Cartão de Crédito
+
+## 👩‍💻 Autora
+
+Vitória Kuhn
+
+---
+
+## 📌 Descrição do Projeto
+
+Este projeto tem como objetivo a construção de um **Data Warehouse (DW)** a partir de dados de transações de cartão de crédito, utilizando arquivos CSV como fonte.
+
+Foi desenvolvido um pipeline de **ETL (Extract, Transform, Load)** para tratar os dados e carregá-los em um banco de dados relacional, permitindo a realização de análises e geração de relatórios.
+
+---
+
+## 🎯 Objetivos
+
+- Modelar um Data Warehouse (modelo estrela)
+- Implementar processo ETL em Python
+- Tratar e padronizar dados
+- Realizar consultas analíticas em SQL
+- Gerar visualizações e insights
+
+---
+
+## 🗂️ Estrutura do Projeto
+
+```
+projeto-bi/
+│
+├── dados/                  # Arquivos CSV (Fatura_*.csv)
+├── etl.py                 # Script de ETL
+├── sql/
+│   ├── create_tables.sql  # Criação das tabelas
+│   ├── consultas.sql      # Consultas analíticas
+│
+├── dashboard/             # (opcional - prints ou arquivos)
+├── README.md
+```
+
+---
+
+## 🧱 Modelagem do Data Warehouse
+
+O modelo utilizado foi o **Star Schema (Modelo Estrela)**:
+
+### 🔹 Tabela Fato
+
+- `fato_transacao`
+
+### 🔹 Dimensões
+
+- `dim_data`
+- `dim_titular`
+- `dim_categoria`
+- `dim_estabelecimento`
+
+---
+
+## ⚙️ Tecnologias Utilizadas
+
+- Python (pandas, sqlalchemy)
+- PostgreSQL
+- SQL
+- (Opcional) Power BI / Excel / Streamlit
+
+---
+
+## 🔄 Processo ETL
+
+### 📥 Extract
+
+- Leitura de múltiplos arquivos CSV
+- Separador `;`
+- Encoding UTF-8
+
+### 🔧 Transform
+
+- Conversão de datas
+- Tratamento de valores numéricos
+- Padronização de categorias
+- Tratamento de parcelas (ex: 1/3 → num_parcela, total_parcelas)
+
+### 📤 Load
+
+- Carga nas tabelas dimensionais
+- Carga na tabela fato
+
+---
+
+## ▶️ Como Executar o Projeto
+
+### 1. Clonar o repositório
+
+```bash
+git clone <url-do-repositorio>
+cd projeto-bi
+```
+
+### 2. Instalar dependências
+
+```bash
+pip install pandas sqlalchemy psycopg2
+```
+
+### 3. Configurar banco de dados
+
+- Criar banco no PostgreSQL
+- Executar script `schema.sql`
+
+### 4. Executar ETL
+
+```bash
+python etl.py
+```
+
+---
+
+## 📊 Consultas Analíticas
+
+Exemplos de análises realizadas:
+
+- Gasto total por titular
+- Top 10 categorias
+- Evolução mensal de gastos
+- Compras à vista vs parceladas
+- Principais estabelecimentos
+
+---
+
+## 📈 Dashboard
+
+O dashboard pode ser construído utilizando:
+
+- Excel / Google Sheets
+- Power BI
+- Streamlit (Python)
+
+Inclui:
+
+- Gráfico de gastos por categoria
+- Evolução mensal
+- Filtros por titular e período
+
+---
+
+## 📌 Resultados
+
+O projeto permite:
+
+- Identificar padrões de consumo
+- Analisar comportamento de gastos
+- Apoiar decisões com base em dados
+
+---
+
+## 📝 Considerações Finais
+
+Este projeto demonstrou a aplicação prática de conceitos de:
+
+- Data Warehouse
+- ETL
+- Modelagem dimensional
+- Business Intelligence
+
+---
+
+## 🚀 Melhorias Futuras
+
+- Implementar carga incremental
+- Melhorar tratamento de duplicidades
+- Criar dashboard interativo avançado
+- Deploy em ambiente web
+
+---
