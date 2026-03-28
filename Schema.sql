@@ -37,3 +37,10 @@ CREATE TABLE dim_estabelecimento (
     id_estabelecimento SERIAL PRIMARY KEY,
     nome_estabelecimento VARCHAR(200)
 );
+
+
+TRUNCATE dim_data RESTART IDENTITY;
+TRUNCATE dim_titular RESTART IDENTITY;
+TRUNCATE dim_categoria RESTART IDENTITY;
+TRUNCATE dim_estabelecimento RESTART IDENTITY;
+TRUNCATE fato_transacao RESTART IDENTITY;

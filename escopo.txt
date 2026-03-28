@@ -1,0 +1,39 @@
+1. 💰 Qual é o gasto total por mês?
+
+👉 Analisa evolução financeira ao longo do tempo
+
+2. 📈 Em quais meses ocorreram os maiores gastos?
+
+👉 Identifica sazonalidade (ex: dezembro costuma ser alto)
+
+3. 🧍‍♂️ Qual titular do cartão gasta mais?
+
+👉 Identifica quem mais consome
+
+4. 🛒 Quais categorias concentram a maior parte dos gastos?
+
+👉 Ex: Alimentação, Transporte, Lazer
+
+5. 🏪 Quais estabelecimentos recebem mais dinheiro?
+
+👉 Onde o dinheiro está indo (ex: mercado, iFood, Amazon)
+
+6. 📅 Qual dia da semana tem mais gastos?
+
+👉 Ajuda a entender comportamento (fim de semana vs semana)
+
+7. 💳 Qual a proporção de compras parceladas vs à vista?
+
+👉 Analisa comportamento financeiro
+
+8. 📊 Qual o valor médio por transação?
+
+👉 Mede o ticket médio
+
+9. 🔁 Existem muitos estornos (valores negativos)?
+
+👉 Pode indicar problemas ou cancelamentos
+
+10. 📉 Como evoluem os gastos de cada titular ao longo do tempo?
+
+👉 Análise mais avançada (tendência)
